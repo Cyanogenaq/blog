@@ -95,7 +95,7 @@
   
       ,"page1": {
           "title": "关于我",
-          "content": "关于我 . 此网站由 fastpages 1提供技术支持。 . 一个除了普通格式外还支持Jupyter的博客。. &#8617; . |",
+          "content": "此网站由 fastpages 1提供技术支持。 . 一个除了普通格式外还支持Jupyter的博客。. &#8617; . |",
           "url": "https://fastpages.fast.ai/blogs/about/",
           "relUrl": "/about/",
           "date": ""
