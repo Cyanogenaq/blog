@@ -1,11 +1,13 @@
 ---
 layout: page
-title: About Me
+title: 关于我
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+# 关于我
+
+此网站由 **[fastpages](https://github.com/fastai/fastpages)** [^1]提供**技术**支持。
 
 
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+[^1]:一个除了普通格式外还支持Jupyter的博客。.
