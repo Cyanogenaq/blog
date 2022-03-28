@@ -6,7 +6,8 @@
 {% endcomment %}
 
 <script>
-    $('html').attr('lang') = 'zh'
+    window.onloadstart(() => { $('html').attr('lang') = 'zh' })
+    window.onload(() => { $('html').attr('lang') = 'zh' })
 </script>
 
 {%- include favicons.html -%}
