@@ -109,7 +109,6 @@ titles_from_headings:
   strip_title: true
   collections: true
 
-highlighter: none
 # highlighter: rouge
 markdown: kramdown
 kramdown:
