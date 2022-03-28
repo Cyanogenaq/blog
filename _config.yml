@@ -15,6 +15,7 @@ github_repo: "blogs"
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
 url: "https://fastpages.fast.ai" # the base hostname & protocol for your site, e.g. http://example.com
+lang: "zh-CN"
 
 ###########################################################
 #########  Special Instructions for baseurl ###############
