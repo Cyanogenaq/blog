@@ -421,7 +421,7 @@ table th { text-align: center !important; }
 
 .code_cell { margin: 1.5rem 0px !important; }
 
-pre code { font-size: 15px !important; padding: 0 0 !important; }
+pre code { font-size: 15px !important; padding: 0 0 !important; background-color: none; }
 
 .youtube-iframe-wrapper { position: relative; padding-bottom: 56.10%; height: 0; overflow: hidden; }
 
