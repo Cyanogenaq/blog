@@ -421,7 +421,7 @@ table th { text-align: center !important; }
 
 .code_cell { margin: 1.5rem 0px !important; }
 
-pre code { font-size: 15px !important; }
+pre code { font-size: 15px !important; padding: 0 0; }
 
 .youtube-iframe-wrapper { position: relative; padding-bottom: 56.10%; height: 0; overflow: hidden; }
 
@@ -430,8 +430,6 @@ pre code { font-size: 15px !important; }
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
-
-[class^="language-"]:not(.language-plaintext) pre, [class^="language-"]:not(.language-plaintext) code { background-color: #323443 !important; color: #f8f8f2; }
 
 .language-python + .language-plaintext code { background-color: white !important; }
 
@@ -450,7 +448,7 @@ pre code { font-size: 15px !important; }
 /* Dracula Theme v1.2.5 https://github.com/zenorocha/dracula-theme Copyright 2016, All rights reserved Code licensed under the MIT license */
 .highlight { background: #323443 !important; color: #f8f8f2 !important; }
 
-.highlight pre, .highlight code { background: #323443; font-size: 110%; }
+.highlight pre, .highlight code { background: #323443; color: #f8f8f2; font-size: 110%; }
 
 .highlight .hll, .highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss { color: #e7997a; }
 
