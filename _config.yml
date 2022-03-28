@@ -109,7 +109,8 @@ titles_from_headings:
   strip_title: true
   collections: true
 
-highlighter: rouge
+highlighter: none
+# highlighter: rouge
 markdown: kramdown
 kramdown:
   math_engine: katex
