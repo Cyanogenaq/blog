@@ -20,6 +20,8 @@ compare "https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.
 compare "https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" "https://cdn.bootcdn.net/ajax/libs/KaTeX/0.15.3/katex.min.css"
 compare "https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" "https://cdn.bootcdn.net/ajax/libs/KaTeX/0.15.3/katex.min.js"
 compare "https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js" "https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.9/MathJax.min.js"
+compare "https://cdn.jsdelivr.net/npm/mathjax@2.7.9/extensions/MathMenu.js" "https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.9/extensions/MathMenu.min.js"
+compare "https://cdn.jsdelivr.net/npm/mathjax@2.7.9/extensions/MathZoom.js" "https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.9/extensions/MathZoom.min.js"
 
 # Remove files created for comparison
 rm f1 f2
