@@ -14,12 +14,12 @@ function compare {
             fi
             }
 
-compare "https://unpkg.com/@primer/css/dist/primer.css" "https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css"
+compare "https://unpkg.com/@primer/css/dist/primer.css" "https://cdn.bootcdn.net/ajax/libs/Primer/19.7.0/primer.min.css"
 #compare "https://hypothes.is/embed.js" "https://cdn.jsdelivr.net/npm/hypothesis/build/boot.js"
-compare "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js"
-compare "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css"
-compare "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js"
-compare "https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js" "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"
+compare "https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" "https://cdn.bootcdn.net/ajax/libs/KaTeX/0.15.3/contrib/auto-render.min.js"
+compare "https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" "https://cdn.bootcdn.net/ajax/libs/KaTeX/0.15.3/katex.min.css"
+compare "https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" "https://cdn.bootcdn.net/ajax/libs/KaTeX/0.15.3/katex.min.js"
+compare "https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js" "https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.9/MathJax.min.js"
 
 # Remove files created for comparison
 rm f1 f2
