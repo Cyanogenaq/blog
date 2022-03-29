@@ -50,37 +50,41 @@ function initSearch() {
     request.open('GET', '/blog/assets/js/search-data.json', true);
   
     request.onload = function(){
-      if (request.status >= 200 && request.status < 400) {
-        // Success!
-        var data = JSON.parse(request.responseText);
-        
-        
-        lunr.tokenizer.separator = /[\s\-/]+/
-        
-        
-        var index = lunr(function () {
-          this.use(lunr.zh);
-          this.ref('id');
-          this.field('title', { boost: 200 });
-          this.field('content', { boost: 2 });
-          this.field('url');
-          this.metadataWhitelist = ['position']
-  
-          for (var i in data) {
-            this.add({
-              id: i,
-              title: data[i].title,
-              content: data[i].content,
-              url: data[i].url
-            });
-          }
-        });
-  
-        searchResults(index, data);
-      } else {
-        // We reached our target server, but it returned an error
-        console.log('Error loading ajax request. Request status:' + request.status);
-      }
+      requires(["https://lib.baomitu.com/lunr.js/2.3.9/lunr.min.js", "/blog/assets/js/vendor/lunr.stemmer.support.min.js", "/blog/assets/js/vendor/lunr.zh.min.js"], function(lunr, stemmerSupport, zh) {
+        stemmerSupport(lunr);
+        zh(lunr);
+        if (request.status >= 200 && request.status < 400) {
+          // Success!
+          var data = JSON.parse(request.responseText);
+          
+          
+          lunr.tokenizer.separator = /[\s\-/]+/
+          
+          
+          var index = lunr(function () {
+            this.use(lunr.zh);
+            this.ref('id');
+            this.field('title', { boost: 200 });
+            this.field('content', { boost: 2 });
+            this.field('url');
+            this.metadataWhitelist = ['position']
+    
+            for (var i in data) {
+              this.add({
+                id: i,
+                title: data[i].title,
+                content: data[i].content,
+                url: data[i].url
+              });
+            }
+          });
+    
+          searchResults(index, data);
+        } else {
+          // We reached our target server, but it returned an error
+          console.log('Error loading ajax request. Request status:' + request.status);
+        }
+      });
     };
   
     request.onerror = function(){
