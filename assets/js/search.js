@@ -50,9 +50,9 @@ function initSearch() {
     request.open('GET', '/blog/assets/js/search-data.json', true);
   
     request.onload = function(){
-      requires(["https://lib.baomitu.com/lunr.js/2.3.9/lunr.min.js", "/blog/assets/js/vendor/lunr.stemmer.support.min.js", "/blog/assets/js/vendor/lunr.zh.min.js"], function(lunr, stemmerSupport, zh) {
-        stemmerSupport(lunr);
-        zh(lunr);
+      // requires(["https://lib.baomitu.com/lunr.js/2.3.9/lunr.min.js", "/blog/assets/js/vendor/lunr.stemmer.support.min.js", "/blog/assets/js/vendor/lunr.zh.min.js"], function(lunr, stemmerSupport, zh) {
+      //   stemmerSupport(lunr);
+      //   zh(lunr);
         if (request.status >= 200 && request.status < 400) {
           // Success!
           var data = JSON.parse(request.responseText);
@@ -62,7 +62,7 @@ function initSearch() {
           
           
           var index = lunr(function () {
-            this.use(lunr.zh);
+            // this.use(lunr.zh);
             this.ref('id');
             this.field('title', { boost: 200 });
             this.field('content', { boost: 2 });
@@ -84,7 +84,7 @@ function initSearch() {
           // We reached our target server, but it returned an error
           console.log('Error loading ajax request. Request status:' + request.status);
         }
-      });
+      // });
     };
   
     request.onerror = function(){
