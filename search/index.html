@@ -118,12 +118,15 @@ window.onload = wrap_img;
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <!-- adapted from https://github.com/pmarsceill/just-the-docs -->
+<!-- <script type="text/javascript" src="/blogs/assets/js/vendor/lunr.min.js"></script> -->
+<script crossorigin="anonymous" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" src="https://lib.baomitu.com/lunr.js/2.3.9/lunr.min.js"></script>
+<script src="https://raw.iqiq.io/MihaiValentin/lunr-languages/master/lunr.stemmer.support.js"></script>
+<script src="https://raw.iqiq.io/MihaiValentin/lunr-languages/master/lunr.zh.js"></script>
 <script type="text/javascript" src="/blogs/assets/js/search.js"></script>
-<script type="text/javascript" src="/blogs/assets/js/vendor/lunr.min.js"></script>
 
 <div class="search">
     <div class="search-input-wrap">
-    <input type="text" class="js-search-input search-input input-block form-control" tabindex="0" placeholder="在 Cyanogenaq 的博客 中查找（暂不支持中文）" aria-label="Search Cyanogenaq 的博客" autocomplete="off">
+    <input type="text" class="js-search-input search-input input-block form-control" tabindex="0" placeholder="在 Cyanogenaq 的博客 中查找（支持中文了? ）" aria-label="Search Cyanogenaq 的博客" autocomplete="off">
     </div>
     <br>
     <div class="js-search-results search-results-wrap"></div>
